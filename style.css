@@ -1,0 +1,86 @@
+/* The global container with dynamic screen-dependent sizing */
+#container {
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    #container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #container {
+        width: 50%;
+    }
+}
+
+/* Text and font styling */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem;
+    color: lightgray;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    color: lightgray;
+}
+
+p {
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+}
+
+/* Body styling */
+
+html {
+    background-image: linear-gradient(to bottom right, blue, red);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* The grid container */
+
+#ppimg {
+    border-radius: 50%;
+    height: 100px;
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#contact {
+    width: 30%;
+}
