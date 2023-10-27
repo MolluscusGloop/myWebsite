@@ -1,10 +1,6 @@
 /* The global container with dynamic screen-dependent sizing */
 #container {
     margin: 0 auto;
-    margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -35,20 +31,20 @@
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    margin: 2rem;
-    color: lightgray;
+    margin: 0;
+    padding: 0.5em;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    margin: 1rem;
-    color: lightgray;
+    margin: 0;
+    padding: 0.5em;
+    padding-top: 0;
 }
 
 p {
-    color: lightgray;
     font-family: 'Roboto', sans-serif;
-    margin: 1rem;
+    margin: 0;
 }
 
 /* Body styling */
@@ -60,15 +56,11 @@ html {
     background-attachment: fixed;
 }
 
-
-/* The grid container */
-
 #ppimg {
     border-radius: 50%;
     height: 100px;
     float: right;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    margin: 0.5rem;
 }
 
 .grid-container {
@@ -77,10 +69,21 @@ html {
 }
 
 .card {
-    margin: 0 auto;
-    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.typeform_card {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #contact {
+    margin: 0 auto;
     width: 30%;
 }
